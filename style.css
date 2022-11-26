@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    rgb(147, 224, 216) 0%,
+    rgb(98, 161, 201) 100%
+  );
+  
+}
+
+.container-cadastro {
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 500px;
+  border: 2px solid white;
+}
+.container-lista {
+  margin-top: 3%;
+  padding: 30px 40px;
+  width: 90%;
+  min-width: 500px;
+  border: 2px solid white;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.new-cadastro-container {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.new-cadastro-container input:focus {
+  outline: none;
+  border-color: rgb(98, 161, 201);
+}
+.new-cadastro-container input {
+  flex: 3;
+  font-size: 1rem;
+  border: 2px solid white;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+.new-cadastro-cursos {
+  border: 2px solid white;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 12px;
+  width: 60%;
+}
+.new-cadastro-button {
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 100%;
+  width: 50%;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(98, 161, 201);
+  color: white;
+  padding: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.cadastros-container {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+  width: 100%;
+  
+}
+
+.aluno-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.aluno-item p {
+  min-width: 160px;
+  max-width: 160px;
+  padding-bottom: 8px;
+}
+.error {
+  border: 2px solid red !important;
+}

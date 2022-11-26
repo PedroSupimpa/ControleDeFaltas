@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro dos alunos</title>
+  </head>
+  <body>
+    <form onsubmit="addAluno(event)">
+      <div class="container-cadastro">
+        <div class="new-cadastro-container">
+          <input
+            type="text"
+            class="new-cadastro-nome-input"
+            placeholder="Digite o nome do aluno"
+            required
+          />
+          <input
+            type="number"
+            class="new-cadastro-matricula-input"
+            placeholder="Digite a matricula"
+            required
+          />
+
+          <select
+            name="new-cadastro-cursos"
+            class="new-cadastro-cursos"
+            required
+          >
+            <option value="" id="default-curso" selected disabled>
+              Selecione seu curso
+            </option>
+            <option value="Direito">Direito</option>
+            <option value="Engenharia de Software">
+              Engenharia de Software
+            </option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Medicina">Medicina</option>
+          </select>
+
+          <button class="new-cadastro-button" type="submit">Adicionar</button>
+        </div>
+      </div>
+    </form>
+    <div class="container-lista">
+      <div class="cadastros-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
